@@ -1,0 +1,8 @@
+```html
+<div class="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-lg shadow-lg">
+  <!-- Content here -->
+</div>
+```
+This code uses Tailwind's gradient utility classes.  However, if the browser doesn't support the `linear-gradient` function or if the specified colors are invalid, it might not render correctly.  This could manifest as a blank box, a solid color, or other unexpected behavior.  It's especially problematic in older browsers.
+
+Another case is unintended specificity issues. If another CSS rule with higher specificity targets the same element, it can override Tailwind's styles.
