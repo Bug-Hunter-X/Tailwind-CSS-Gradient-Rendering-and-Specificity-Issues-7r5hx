@@ -1,0 +1,16 @@
+```html
+<div class="bg-gradient-to-r from-blue-500 to-purple-500 p-4 rounded-lg shadow-lg">
+  <!-- Content here -->
+</div>
+
+<style>
+  /* Add fallback styles for older browsers that don't support linear-gradients */
+  .bg-gradient-to-r {
+    background-image: linear-gradient(to right, blue, purple);
+  }
+  /* Add more specific selectors to overcome specificity issues if needed */
+  #mySpecificDiv.bg-gradient-to-r {
+    /*Your more specific styles here*/
+  }
+</style>
+```
